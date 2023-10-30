@@ -7,6 +7,10 @@ export type Review = {
     slug: string;
     image: string;
     alt: string;
+    artist: string;
     url: string;
+    artcontent: PortableTextBlock[];
+    author: string;
     content: PortableTextBlock[];
+    searchTags: string[];
 }

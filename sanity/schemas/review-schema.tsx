@@ -27,7 +27,20 @@ const review = {
           title: "Alt",
           type: 'string'
         },
+        {
+          name: "artist",
+          title: "Artist",
+          type: 'string'
+        },
       ],
+    },
+    {
+      name: 'artcontent',
+      title: 'ArtContent',
+      type: 'array',
+      of: [{ type: 'block' }],
+
+
     },
     {
         name: 'url',
@@ -36,12 +49,23 @@ const review = {
 
     },
     {
+      name: "author",
+      title: "Author",
+      type: 'string'
+    },
+    {
       name: 'content',
       title: 'Content',
       type: 'array',
       of: [{ type: 'block' }],
 
 
+    },
+    {
+      name: 'searchTags',
+      title: 'SearchTags',
+      type: 'array',
+      of: [{type: 'string'}]
     }
   ],
 };
