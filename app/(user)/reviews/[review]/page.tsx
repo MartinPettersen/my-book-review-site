@@ -30,7 +30,7 @@ export default function Review({ params }: Props) {
   return (
     <div className="max-w-full max-h-full bg-[#e0f2fe]">
       {review == null ? (
-        <>Loading </>
+        <div className="h-screen text-lg font-bold"> </div>
       ) : (
         <div className="max-w-3xl  mx-auto py-5 flex flex-col ">
           <h1 className="flex justify-center p-8 text-6xl">{review.name}</h1>
