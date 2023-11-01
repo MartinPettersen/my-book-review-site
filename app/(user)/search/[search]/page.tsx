@@ -25,8 +25,8 @@ export default function Search({ params }: Props) {
       }, [])
 
   return (
-    <div className="max-w-full max-h-full bg-[#e0f2fe]">
-    <div className="max-w-full  mx-auto py-10   bg-[#e0f2fe] flex items-center justify-center h-fit ">
+    <div className="max-w-full max-h-full bg-[#1E1E1E]">
+    <div className="max-w-full  mx-auto py-10   bg-[#1E1E1E] flex items-center justify-center h-fit ">
       <div className="flex flex-col gap-10 justify-center items-center  w-[80%] overflow-auto pt-6 pb-8 ">
         {
         reviews == null? <>Loading {searchTerm}</> :
@@ -35,7 +35,7 @@ export default function Search({ params }: Props) {
         reviews.map((review) => (
           <Link
             href={`/reviews/${review.slug}`}
-            className="hover:scale-110 border text-[#cbe6f5] hover:text-[#244265] bg-[#0369a1] border-[#0369a1] hover:bg-[#64c2f4] hover:border-[#64c2f4] w-[30em] flex flex-col items-center justify-center"
+            className="hover:scale-110 border text-[#E7E7E7] hover:text-[#E7E7E7] bg-[#2A2A2A] border-[#353535] hover:bg-[#353535] hover:border-[#353535] w-[30em] flex flex-col items-center justify-center"
             key={review._id}
           >
             <h1 className="font-bold text-xl">{review.name}</h1>

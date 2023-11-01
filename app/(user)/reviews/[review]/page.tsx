@@ -28,12 +28,12 @@ export default function Review({ params }: Props) {
   };
 
   return (
-    <div className="max-w-full max-h-full bg-[#e0f2fe]">
+    <div className="max-w-full max-h-full bg-[#1E1E1E]  text-[#B2B2B2]">
       {review == null ? (
         <div className="h-screen text-lg font-bold"> </div>
       ) : (
         <div className="max-w-3xl  mx-auto py-5 flex flex-col ">
-          <h1 className="flex justify-center p-8 text-6xl">{review.name}</h1>
+          <h1 className="flex text-[#E7E7E7] justify-center p-8 text-6xl">{review.name}</h1>
 
           <div className="flex justify-center bg-gray-800">
             <Image
@@ -48,13 +48,13 @@ export default function Review({ params }: Props) {
             <p>Author: {review.author} </p>
 
             <div className="flex flex-col">
-              <h1 className="font-bold text-xl">Cover review</h1>
+              <h1 className="font-bold text-xl text-[#E7E7E7]">Cover review</h1>
               <PortableText value={review.artcontent} />
               <p>artist: {review.artist}</p>
             </div>
 
             <div className="flex flex-col">
-              <h1 className="font-bold text-xl">Book review</h1>
+              <h1 className="font-bold text-xl text-[#E7E7E7]">Book review</h1>
 
               <PortableText value={review.content} />
             </div>

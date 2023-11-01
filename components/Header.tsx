@@ -16,14 +16,14 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between space-x-2 font-bold px-16 py-6 bg-gray-800">
+    <header className="flex items-center justify-between space-x-2 font-bold px-16 py-6 bg-[#282828]">
       <Link href="/">
         <h1 className="text-5xl font-bold">
-          <span className="bg-gradient-to-r from-gray-800 via-[#49cea8] to-gray-800 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#282828] via-[#49cea8] to-[#282828] bg-clip-text text-transparent">
             Book Reviews
           </span>
         </h1>
-        <p className="text-[#49cea8] pt-2">a couple of uninformative book reviews</p>
+        <p className="text-[#49cea8] opacity-50 pt-2">a couple of uninformative book reviews</p>
         {/* Et par uinformativ bokanmeldelser. */}
       </Link>
       <div className=" flex flex-row gap-1 items-center justify-center">
