@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={tinos.className}>
+      <body className={`${tinos.className} bg-[#1E1E1E]`}>
         {/* Header */}
         <Header />
         {/* Banner */}

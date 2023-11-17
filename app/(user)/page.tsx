@@ -23,7 +23,7 @@ export default async function Home() {
                   alt={review.alt}
                   width={600}
                   height={600}
-                  className="object-cover"
+                  className="object-cover sm:w-[600px] w-[300px]"
                 />
               )}
             </div>
