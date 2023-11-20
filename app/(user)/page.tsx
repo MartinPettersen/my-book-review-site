@@ -12,7 +12,7 @@ export default async function Home() {
         {reviews.map((review) => (
           <Link
             href={`/reviews/${review.slug}`}
-            className="hover:scale-110 border text-[#E7E7E7] hover:text-[#E7E7E7] bg-[#2A2A2A] border-[#353535] hover:bg-[#353535] hover:border-[#353535] w-[30em] flex flex-col items-center justify-center"
+            className="hover:scale-110 border text-[#E7E7E7] hover:text-[#E7E7E7] bg-[#2A2A2A] border-[#353535] hover:bg-[#353535] hover:border-[#353535] w-[100%] flex flex-col items-center justify-center"
             key={review._id}
           >
             <h1 className="font-bold text-xl">{review.name}</h1>
