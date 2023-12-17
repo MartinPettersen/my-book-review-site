@@ -17,7 +17,6 @@ export async function getReviews(): Promise<Review[]> {
             "alt": image.alt,
             "artist": image.artist,
             artcontent,
-            url,
             author,
             content,
             searchTags,

@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <div className="max-w-full  mx-auto py-10   bg-[#1E1E1E] flex items-center justify-center h-fit ">
-      <div className="flex flex-col gap-10 justify-center items-center  w-[80%] overflow-auto pt-6 pb-8 ">
+      <div className="flex flex-col gap-10 justify-center items-center  w-[80%] sm:w-[30em] overflow-auto pt-6 pb-8 ">
         {reviews.map((review) => (
           <Link
             href={`/reviews/${review.slug}`}
